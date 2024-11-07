@@ -1,0 +1,40 @@
+<?php
+    $a = 4;
+    $b = 3;
+    if ($a > $b){
+        echo "$a est plus grand que $b";
+    } else {
+        echo "$a est moins grand qu $b";
+    }
+//operateur ternaire
+/* si if peut s'ecrir de cette manierre exemple :
+if ($age>=18){
+    $reponse="majeur";
+}    else {
+        $reponse="mineur"    
+}
+il peut egalement s'éecrire de maniere simplifié comme ceci :
+$message = ($age >= 18) ? "majeur" : "mineur";
+*/
+    $age = 25; 
+    $annonce = ($age >= 18) ? "majeur" : "mineur";
+    echo "Vous êtes $annonce .";
+    $age = 16;
+    echo "Vous êtes ". ($age >= 18) ? "majeur" : "mineur" . ".";
+
+    // Instruction switch 
+    $a = 2;
+    switch ($a) {
+        case 0 :
+            echo"$a = 0";
+        break;
+        case 1 : 
+            echo"$a = 1";
+        break;
+        case 2 :
+            echo"$a = 2";
+        break;    
+        default :
+        echo "$a n'est pas égale à 0 ni 1 ni 2";
+    }
+?>
