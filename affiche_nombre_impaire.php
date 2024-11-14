@@ -18,5 +18,14 @@ for ($a = 1; $a <= 9; $a++) {
     echo "<th>$a</th>";
 }
 echo "</tr>";
+for ($a = 1; $a <= 9; $a++) {
+    echo "<tr>";
+    echo "<th>$a</th>";
+    for ($b = 1; $b <= 9; $b++) {
+        echo "<td>" . ($a * $b) . "</td>";
+    }
+    echo "</tr>";
 
+}
+echo "</table>";
 ?>
