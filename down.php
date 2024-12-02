@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="check.php" method="post">
+    <form action="check.php" method="post" enctype="multipart/form-data">
         <label for="file">Déposez un fichier :</label>
         <input type="file" name="fichier" id="file">
         <input type="submit" value="Télécharger">
