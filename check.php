@@ -1,10 +1,15 @@
 <?php
-echo " tu surf sur le web en semaine plutot le : ";
+if (isset($_FILES['fichier'])) {
+    echo '<pre>';
+    var_dump($_FILES['fichier']);
+    echo '</pre>';
 
-foreach($_REQUEST["jours"] as $jour){
-    echo " $jour - ";
+    if($_FILES['fichier']['error'] === UPLOAD_ERR_OK) {
+        $uploadDir = 'uploads/';
+        $uploadFile = $uploadDir . basename($_FILES['fichier']['name']);
+        if (!is_dir($uploadDir)) {
+            mkdir($)
+        }
+    }
 }
-
-
-
 ?>
